@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: hms5232
-# source code and manual on https://github.com/hms5232/ubunut-install-CNS11643
+# source code and manual on https://github.com/hms5232/ubunut-install-CNS11643-fonts
 
 # if $HOME/.fonts dir not exist, then create it.
 if [ ! -d "$HOME/.fonts" ] ; then
@@ -27,4 +27,5 @@ rm Open_Data.zip
 rm -r Open_Data/
 
 # finally
+echo -e "\n\a"
 echo -e "============== This is the end of script. ============== \n"
