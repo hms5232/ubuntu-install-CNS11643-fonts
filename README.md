@@ -1,4 +1,4 @@
-# ubunut-install-CNS11643-fonts
+# ubuntu-install-CNS11643-fonts
 ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 
 ## 關於　About
@@ -11,7 +11,7 @@ ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 3. 足夠的儲存空間（雖然字型檔案很小，但還有其他文件會一起下載並解壓縮，建議檔案下載位置目錄空間有個1GB較為保險）
 
 ## 使用說明　Manual
-1. [Clone](https://github.com/hms5232/ubunut-install-CNS11643-fonts.git) 或直接[下載zip檔案](https://github.com/hms5232/ubunut-install-CNS11643-fonts/archive/master.zip)
+1. [Clone](https://github.com/hms5232/ubuntu-install-CNS11643-fonts.git) 或直接[下載zip檔案](https://github.com/hms5232/ubuntu-install-CNS11643-fonts/archive/master.zip)
 2. 取出對應的 shell script 檔案
 3. 用`cd`指令移動到 shell 目錄
 3. 執行`chmod +x <shell script which you want to execute>`來使 shell 檔案可執行
@@ -24,6 +24,6 @@ ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 本人編寫 shell script 僅供簡化安裝程序，使用者應遵守[〈政府資料開放授權條款〉](https://data.gov.tw/license)相關規定。使用者如何使用字型及是否遵守授權條款之規定，作者無法保證也不負任何責任，亦不構成任何資料提供使用者或機關申述、保證或暗示其推薦、同意、許可或核准之意思表示。
 
 ## 許可　License
-請見 [LICENSE 頁面](https://github.com/hms5232/ubunut-install-CNS11643-fonts/blob/master/LICENSE)  。
+請見 [LICENSE 頁面](https://github.com/hms5232/ubuntu-install-CNS11643-fonts/blob/master/LICENSE)  。
   
-See [LICENSE page](https://github.com/hms5232/ubunut-install-CNS11643-fonts/blob/master/LICENSE).
+See [LICENSE page](https://github.com/hms5232/ubuntu-install-CNS11643-fonts/blob/master/LICENSE).

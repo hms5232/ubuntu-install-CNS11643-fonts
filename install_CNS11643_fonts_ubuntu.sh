@@ -2,8 +2,8 @@
 
 # ######################################################################################################## #
 # Author: hms5232
-# Source code and manual on https://github.com/hms5232/ubunut-install-CNS11643-fonts
-# Contact, report bugs or ask questions: https://github.com/hms5232/ubunut-install-CNS11643-fonts/issues
+# Source code and manual on https://github.com/hms5232/ubuntu-install-CNS11643-fonts
+# Contact, report bugs or ask questions: https://github.com/hms5232/ubuntu-install-CNS11643-fonts/issues
 # ######################################################################################################## #
 
 # if ~/.fonts dir not exist, then create it.
