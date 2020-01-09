@@ -12,13 +12,26 @@ if [ ! -d "$HOME/.fonts" ] ; then
     echo -e "create ~/.fonts/ \n"
 fi
 
-# donwload CNS11643中文標準交換碼全字庫（簡稱全字庫）
+# download CNS11643中文標準交換碼全字庫（簡稱全字庫）
 # 正楷體、正宋體
 # TW-Kai, TW-Sung
 wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 
+# let's hash it~
+# but we don't have offical sha1sum file Orz
+hash=$(sha1sum Open_Data.zip | cut -d ' ' -f 1)
+echo -e "\n The SHA1 value of downloaded file is \n"
+echo -e "\t>>>>> $hash <<<<<\n"
+
 # unzip
 unzip Open_Data.zip
+
+# check zip file download and upzip succefully
+if [ ! -d "Open_Data/" ] ; then
+	echo -e "\n\n"
+	echo -e "\a========= The font file went wrong! Please try again later. =========\n"
+	exit 1
+fi
 
 # copy fonts to ~/.fonts
 cp -i Open_Data/Fonts/*.ttf $HOME/.fonts
