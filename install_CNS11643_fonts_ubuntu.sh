@@ -22,6 +22,17 @@ wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 hash=$(sha1sum Open_Data.zip | cut -d ' ' -f 1)
 echo -e "\n The SHA1 value of downloaded file is \n"
 echo -e "\t>>>>> $hash <<<<<\n"
+# ask user whether to continue
+read -p "Do you want to continue? [y/N]" yn
+case $yn in
+	[yY][eE][sS]|[yY])
+		;;
+	*)
+		echo -e "\n"
+		echo -e "============== Exit shell script! =============="
+		exit
+		;;
+esac
 
 # unzip
 unzip Open_Data.zip
