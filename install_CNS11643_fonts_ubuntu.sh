@@ -23,9 +23,12 @@ hash=$(sha1sum Open_Data.zip | cut -d ' ' -f 1)
 echo -e "\n The SHA1 value of downloaded file is \n"
 echo -e "\t>>>>> $hash <<<<<\n"
 # ask user whether to continue
-read -p "Do you want to continue? [y/N]" yn
+echo -e "\a"
+read -p "Do you want to continue? [Y/n]" yn
 case $yn in
 	[yY][eE][sS]|[yY])
+		;;
+	"")  # enter key
 		;;
 	*)
 		echo -e "\n"

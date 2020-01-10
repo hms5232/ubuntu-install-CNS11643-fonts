@@ -15,7 +15,7 @@ ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 2. 取出對應的 shell script 檔案
 3. 用`cd`指令移動到 shell 目錄
 3. 執行`chmod +x <shell script which you want to execute>`來使 shell 檔案可執行
-4. 執行`./<shell script name which you want to execute>`開始下載、解壓縮和安裝等程序（中間會需要使用者輸入密碼以執行 sudo 指令）  
+4. 執行`./<shell script name which you want to execute>`開始下載、解壓縮和安裝等程序（中間會計算雜湊值，需要使用者確認是否繼續及輸入密碼以執行 sudo 指令）  
   
 ※由於更新字型指令需要 root 權限，如不想等到執行該指令時才輸入密碼，請在最後一步（執行 shell script）加上`sudo`  
 ※因為相關檔案為即時下載，作業時間會因為當下網路環境等有所變化，請耐心等待
