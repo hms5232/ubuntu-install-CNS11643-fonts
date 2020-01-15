@@ -12,6 +12,23 @@ if [ ! -d "$HOME/.fonts" ] ; then
     echo -e "create ~/.fonts/ \n"
 fi
 
+# if Open_Data.zip exists, sure user thether to download again
+if [ -f "Open_Data.zip" ] ; then
+	read -p "Open_Data.zip already exists. Do you want to delete it and download again? [y/n]" re_download
+	case $re_download in
+		[yY][eE][sS]|[yY])
+			echo -e "remove Open_Data.zip...\n"
+			rm Open_Data.zip
+			echo -e "\n"
+			;;
+		*)
+			echo -e "\n"
+			echo -e "============== Exit shell script! =============="
+			exit
+			;;
+	esac
+fi
+
 # download CNS11643中文標準交換碼全字庫（簡稱全字庫）
 # 正楷體、正宋體
 # TW-Kai, TW-Sung
