@@ -20,19 +20,26 @@ if [ -f "Open_Data.zip" ] ; then
 			echo -e "remove Open_Data.zip...\n"
 			rm Open_Data.zip
 			echo -e "\n"
+			# download CNS11643中文標準交換碼全字庫（簡稱全字庫）
+			# 正楷體、正宋體
+			# TW-Kai, TW-Sung
+			wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 			;;
 		*)
-			echo -e "\n"
-			echo -e "============== Exit shell script! =============="
-			exit
-			;;
+			read -p "Use the existing Open_Data.zip? [y/n]" re_use
+			case $re_use in
+				[yY][eE][sS]|[yY])
+					echo -e "Skip download."
+					echo -e "\n"
+					;;
+				*)
+					echo -e "\n"
+					echo -e "============== Exit shell script! =============="
+					exit
+					;;
+			esac
 	esac
 fi
-
-# download CNS11643中文標準交換碼全字庫（簡稱全字庫）
-# 正楷體、正宋體
-# TW-Kai, TW-Sung
-wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 
 # let's hash it~
 # but we don't have offical sha1sum file Orz
