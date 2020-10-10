@@ -12,7 +12,7 @@ if [ ! -d "$HOME/.fonts" ] ; then
     echo -e "create ~/.fonts/ \n"
 fi
 
-# if Open_Data.zip exists, sure user thether to download again
+# when Open_Data.zip exists, users must check out they wanna to download again or not
 if [ -f "Open_Data.zip" ] ; then
 	read -p "Open_Data.zip already exists. Do you want to delete it and download again? [y/n]" re_download
 	case $re_download in
