@@ -6,6 +6,9 @@
 # Contact, report bugs or ask questions: https://github.com/hms5232/ubuntu-install-CNS11643-fonts/issues
 # ######################################################################################################## #
 
+
+need_download=true
+
 # if ~/CNS11643 dir not exist, then create it.
 if [ ! -d "$HOME/CNS11643" ] ; then
     mkdir $HOME/CNS11643
@@ -20,15 +23,12 @@ if [ -f "Open_Data.zip" ] ; then
 			echo -e "remove Open_Data.zip...\n"
 			rm Open_Data.zip
 			echo -e "\n"
-			# download CNS11643中文標準交換碼全字庫（簡稱全字庫）
-			# 正楷體、正宋體
-			# TW-Kai, TW-Sung
-			wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 			;;
 		*)
 			read -p "Use the existing Open_Data.zip? [y/n]" re_use
 			case $re_use in
 				[yY][eE][sS]|[yY])
+					need_download=false
 					echo -e "Skip download."
 					echo -e "\n"
 					;;
@@ -39,6 +39,14 @@ if [ -f "Open_Data.zip" ] ; then
 					;;
 			esac
 	esac
+fi
+
+# Let's download font
+if $need_download ; then
+	# download CNS11643中文標準交換碼全字庫（簡稱全字庫）
+	# 正楷體、正宋體
+	# TW-Kai, TW-Sung
+	wget http://www.cns11643.gov.tw/AIDB/Open_Data.zip
 fi
 
 # let's hash it~
