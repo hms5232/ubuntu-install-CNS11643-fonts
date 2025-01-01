@@ -23,6 +23,10 @@ ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 ## 聲明　Declaration
 本人編寫 shell script 僅供簡化安裝程序，使用者應遵守[〈政府資料開放授權條款〉](https://data.gov.tw/license)相關規定。使用者如何使用字型及是否遵守授權條款之規定，作者無法保證也不負任何責任，亦不構成任何資料提供使用者或機關申述、保證或暗示其推薦、同意、許可或核准之意思表示。
 
+## 相關專案　Related projects
+
+* GitHub Action 版：https://github.com/hms5232/install-CNS11643-fonts-action
+
 ## 許可　License
 請見 [LICENSE 頁面](https://github.com/hms5232/ubuntu-install-CNS11643-fonts/blob/master/LICENSE)  。
   
