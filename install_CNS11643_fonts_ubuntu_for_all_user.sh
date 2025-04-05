@@ -174,9 +174,9 @@ fi
 
 # copy fonts to ~/CNS11643
 if [ -d "Open_data/Fonts/" ] ; then
-    cp -i Open_Data/Fonts/*.ttf $HOME/.fonts
+    cp -i Open_Data/Fonts/*.ttf $HOME/CNS11643
 fi
-cp -i Open_Data/*.ttf $HOME/.fonts
+cp -i Open_Data/*.ttf $HOME/CNS11643
 # move folder to system fonts folder
 sudo mv -i $HOME/CNS11643 /usr/local/share/fonts/
 # change permission
