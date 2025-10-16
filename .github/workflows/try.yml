@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run install_CNS11643_fonts_ubuntu.sh
         run: ./install_CNS11643_fonts_ubuntu.sh
         shell: bash
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run install_CNS11643_fonts_ubuntu_for_all_user.sh
         run: ./install_CNS11643_fonts_ubuntu_for_all_user.sh
         shell: bash
