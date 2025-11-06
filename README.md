@@ -20,6 +20,19 @@ ubuntu安裝CNS11643中文標準交換碼全字庫的正楷體、正宋體字型
 ※由於更新字型指令需要 root 權限，如不想等到執行該指令時才輸入密碼，請在最後一步（執行 shell script）加上`sudo`  
 ※因為相關檔案為即時下載，作業時間會因為當下網路環境等有所變化，請耐心等待
 
+### 移除字型　Uninstallation
+
+```sh
+# 依照當初安裝方式二選一執行，或著都執行亦可
+# 移除下載來的字型檔案（安裝給自己用而已）
+rm $HOME/.fonts/TW-Sung-*.ttf $HOME/.fonts/TW-Kai-*.ttf
+# 移除下載來的字型檔案（安裝給所有使用者）
+sudo rm -rf /usr/local/share/fonts/CNS11643/
+
+# 清除並重建字型快取
+sudo fc-cache -fv
+```
+
 ## 聲明　Declaration
 本人編寫 shell script 僅供簡化安裝程序，使用者應遵守[〈政府資料開放授權條款〉](https://data.gov.tw/license)相關規定。使用者如何使用字型及是否遵守授權條款之規定，作者無法保證也不負任何責任，亦不構成任何資料提供使用者或機關申述、保證或暗示其推薦、同意、許可或核准之意思表示。
 
